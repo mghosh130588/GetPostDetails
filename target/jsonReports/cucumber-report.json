@@ -1,0 +1,298 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-19T20:20:43.174Z",
+        "line": 4,
+        "name": "to get all the comments posted in the all the posts for the user with username Delphine",
+        "description": "",
+        "id": "get-all-the-comments-in-a-post-by-a-given-username-and-validate-the-email-address-in-the-comments-the-comments--for-all-the-posts-for-a-given-username.;to-get-all-the-comments-posted-in-the-all-the-posts-for-the-user-with-username-delphine",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1775370887,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Get the userId for the username \"Delphine\" with \"GETUSERS\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delphine\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"GETUSERS\"",
+                  "offset": 48
+                }
+              ],
+              "location": "Stepdefinition.get_the_userId_for_the_username_with_request(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133337851,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user sends a \"GET\" request to \"GETPOSTS\" for the above UserID",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"GETPOSTS\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefinition.the_user_sends_a_request_to_for_the_above_UserID(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 890821307,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user sends a \"GET\" request to \"GETCOMMENTS\" for all the posts",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"GETCOMMENTS\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefinition.the_user_sends_a_request_to_for_all_the_posts(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22735525,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate that the \"email\" address present in each comment is valid and print the email address in a log file",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Stepdefinition.validate_that_the_address_present_in_each_comment_is_valid_and_print_the_email_address_in_a_log_file(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-19T20:20:46.011Z",
+        "line": 11,
+        "name": "to get all the comments posted in the all the posts for the user with username Delph",
+        "description": "",
+        "id": "get-all-the-comments-in-a-post-by-a-given-username-and-validate-the-email-address-in-the-comments-the-comments--for-all-the-posts-for-a-given-username.;to-get-all-the-comments-posted-in-the-all-the-posts-for-the-user-with-username-delph",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 104986149,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Get the userId for the username \"Delph\" with \"GETUSERS\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delph\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"GETUSERS\"",
+                  "offset": 45
+                }
+              ],
+              "location": "Stepdefinition.get_the_userId_for_the_username_with_request(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 91251,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user sends a \"GET\" request to \"GETPOSTS\" for the above UserID",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"GETPOSTS\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefinition.the_user_sends_a_request_to_for_the_above_UserID(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41881,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The user sends a \"GET\" request to \"GETCOMMENTS\" for all the posts",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"GETCOMMENTS\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefinition.the_user_sends_a_request_to_for_all_the_posts(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29608,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "validate that the \"email\" address present in each comment is valid and print the email address in a log file",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Stepdefinition.validate_that_the_address_present_in_each_comment_is_valid_and_print_the_email_address_in_a_log_file(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-19T20:20:46.117Z",
+        "line": 18,
+        "name": "to get all the comments posted in the all the posts for the user with username Delphine",
+        "description": "",
+        "id": "get-all-the-comments-in-a-post-by-a-given-username-and-validate-the-email-address-in-the-comments-the-comments--for-all-the-posts-for-a-given-username.;to-get-all-the-comments-posted-in-the-all-the-posts-for-the-user-with-username-delphine",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 90829269,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Get the userId for the username \"Delphine\" with \"GETUSERS\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Delphine\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"GETUSERS\"",
+                  "offset": 48
+                }
+              ],
+              "location": "Stepdefinition.get_the_userId_for_the_username_with_request(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71169783,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user sends a \"GET\" request to \"GETPOSTS\" for the above UserID",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"GETPOSTS\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefinition.the_user_sends_a_request_to_for_the_above_UserID(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 824932010,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user sends a \"GET\" request to \"GETCOMMENTS\" for all the posts",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"GETCOMMENTS\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefinition.the_user_sends_a_request_to_for_all_the_posts(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14276659,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "validate that the \"email\" address present in each comment is valid and print the email address in a log file",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Stepdefinition.validate_that_the_address_present_in_each_comment_is_valid_and_print_the_email_address_in_a_log_file(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get all the comments in a post by a given username and validate the email address in the comments the comments, for all the posts for a given username.",
+    "description": "",
+    "id": "get-all-the-comments-in-a-post-by-a-given-username-and-validate-the-email-address-in-the-comments-the-comments--for-all-the-posts-for-a-given-username.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/apitest/cucumber/features/ValidateEmailaddressin%20Comments.feature",
+    "tags": []
+  }
+]
